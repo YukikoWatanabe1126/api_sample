@@ -31,9 +31,8 @@ public class ItemController {
 	}
 	
 	@PostMapping("/create")
-    // データ保存用のWeb APIです
     public Item create(@RequestBody RequestItem requestItem) {
-        // 保存したItemオブジェクトを返します
+
         return this.itemService.insert(requestItem);
     }
 }
